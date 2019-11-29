@@ -27,4 +27,12 @@
 `是getObject()返回的对象，如需获取他本身加&（app.getBean("&refuelBean")）`
 `主要用于接口的注册（如驱动注册），因为会调用getObject()返回需要的对象，对驱动很好的保护，这样的接口也暴露了` 
 ****
-**refueltwo007-annotation01-beanlifecycle01**  
+**refueltwo007-annotation01-beanlifecycle01**   
+`bean的生命周期：只要单例是ioc容器控制bean的生命周期，多列GC控制`  
+`1.直接指定 @Bean(value = "cat",initMethod = "init",destroyMethod = "destroy")`  
+`2.后置处理器：实现BeanPostProcessor接口重新2个默认的方法，注册到容器就可以了，后置处理器会拦截所有的Bean`  
+`3.js250方法：在要初始化类的方法上加@PostConstruct注解(初始化)`  
+` @PreDestroy注解（销毁）`  
+`4.实现InitializingBean, DisposableBean接口中2个创建和销毁方法`
+****
+**refueltwo008-annotation01-value01**  

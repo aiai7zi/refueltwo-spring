@@ -5,4 +5,7 @@
 `useDefaultFilters:是否自动扫描：@Component @Repository@Service@Controller注解`  
 `com.refueltwo.main.filtertype.RefuelTypeFilter：类是自定义扫描   metadata：元信息`  
 ****
-**refueltwo003-annotation01-scope01**
+**refueltwo003-annotation01-scope01**  
+`@Scope的取值： singleton 单例的（默认）(默认懒汉式加载)  prototype 多列(默认懒汉式加载) request 同一次请求 session 同一次会话`   
+`@Lazy 这注解是懒加载，懒加载是创建ioc容器不加载，使用载加载，`
+`new AnnotationConfigApplicationContext()就已经创建了容器`

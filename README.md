@@ -4,3 +4,5 @@
 `includeFilters:包含   excludeFilters:排除`  
 `useDefaultFilters:是否自动扫描：@Component @Repository@Service@Controller注解`  
 `com.refueltwo.main.filtertype.RefuelTypeFilter：类是自定义扫描   metadata：元信息`  
+****
+**refueltwo003-annotation01-scope01**

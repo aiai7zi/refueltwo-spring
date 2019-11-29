@@ -35,8 +35,8 @@
 ` @PreDestroy注解（销毁）`  
 `4.实现InitializingBean, DisposableBean接口中2个创建和销毁方法`
 ****
-**refueltwo008-annotation01-value01**
+**refueltwo008-annotation01-value01**  
 `@Value注解是注入属性值（@PropertySource(value = {"classpath:person.properties"})），支持什么表达式（忘记了）` 
 **** 
-**refueltwo009-annotation01-autowired01** 
+**refueltwo009-annotation01-autowired01**   
 `@Autowired 默认根据name注入`

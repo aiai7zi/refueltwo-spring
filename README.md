@@ -15,3 +15,11 @@
 `作用在@Baen注解的方法上，判断bean是否加载`
 ****
 **refueltwo005-annotation01-import01**  
+`@Import注解是往ioc容器中的加入bean的4种方式之一 `
+`其他3种：2.@Bean  3.ImportSelector接口 4.@ComponentScan加@Controller @Component @Servier`
+`@Import注解可通过.class文件直接导入(@Import(value = {Person.class, Animal.class}))，`  
+`也可以：实现ImportSelector接口的selectImports方法和实现ImportBeanDefinitionRegistrar`  
+`接口的registerBeanDefinitions方法导入导入bean`  
+`@Import注解大量用于Springboot的自动装配`  
+****
+**refueltwo006-annotation01-factorybean01**

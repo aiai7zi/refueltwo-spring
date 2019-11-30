@@ -42,10 +42,14 @@
 `@Autowired 自动注入  @Qualifier("goodsMapper")@Autowired一起使用`  
 `@Bean(value = "orderService",autowire = Autowire.BY_TYPE): 可以根据type注入`  
 `@AutoWired使用的时byName还是byType(默认是使用byType,当发现多个类型的bean话 就通过byName)`  
-`@Primary标了这个注解会优先加载`
+`@Primary标了这个注解会优先加载`  
+`@AutoWired可以标注set方法上，标注在构造方法上，方法入参上`
 ****
-**refueltwo008-annotation01-profile01**
-
+**refueltwo010-annotation01-profile01**  
+` app.getEnvironment().setActiveProfiles("test"):设置环境`  
+` @Profile("dev")：加入哪个环境`  
+`通过运行时jvm参数来切换-Dspring.profiles.active=test|dev|prod`  
+`配置文件实现public class RefuelConfig implements EmbeddedValueResolverAware 传入环境信息`
 
 ****
 `@Configuration把一个类作为一个IoC容器，它的某个方法头上如果注册了@Bean，就会作为这个Spring容器中的Bean。 `  
